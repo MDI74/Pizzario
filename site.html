@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang ="en">
+<head>
+	<meta charset ="UTF-8">
+	<meta name="description" content="Pizza delivery">
+	<meta name="keywords" content="Pizza delivery, pizzario"/>
+	<link rel ="stylesheet" href ="css/style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Kurale&display=swap" rel="stylesheet">
+	<title>Pizza Rio</title>
+</head>
+<body>
+<div class="container">
+	<header class="header">
+			<div class="logo">
+				<img src="images/logo.jpg">
+			</div>
+			<div class="pizzario">
+				<h1>Pizza Rio</h1>
+			</div>
+			<nav class="nav">
+				<a class="nav_link"href="#pizza">Pizza</a>
+				<a class="nav_link"href="#link">Drinks</a>
+			</nav>
+			<div class="text">
+				<h1 class="call">Call and order</h1>
+				<h1 class="phone">+79514850000</h1>
+			</div>
+			<div class="basket">
+				<img src="images/basket.jpg">
+			</div>
+			<div class="login">
+				<button class="js-show-form">Login or register</button>
+			</div>
+			<form class="menu_search">
+			  <input class="search" placeholder="Search.." type="search" name="text">
+			  <button class="search_button"type="submit">
+				<img src="images/search.jpg">
+			  </button>
+			</form>
+			<form class="login_show hidden">
+				<table class="iksweb">
+					<tbody>
+						<tr>
+							<td><input type="text" name="Email" placeholder="Email"/></td>
+						</tr>
+						<tr>
+							<td><input type="password" name="password" placeholder="Password" /></td>
+						</tr>
+					</tbody>
+				</table>			  	 
+				  <button  class="login_button">Login</button>
+				  <button class="login_button">Register</button>
+			</form>
+			<script>
+				/* Scroll */
+				const anchors = document.querySelectorAll('a[href*="#"]')
+				for (let anchor of anchors){
+					anchor.addEventListener("click",function(event){
+					event.preventDefault();
+					const blockID = anchor.getAttribute('href')
+					document.querySelector('' + blockID).scrollIntoView({
+					behavior: "smooth",
+					block:"start"
+					})
+				  })
+				}
+				/* Login */
+				(function main() {
+				  document.addEventListener('DOMContentLoaded', DOMContentLoaded);
+				 
+				  function DOMContentLoaded() {
+						var buttonNode = document.querySelector('.js-show-form');
+					buttonNode.addEventListener('click', showForm);
+				  }
+					
+				  function showForm() {
+					var node = document.querySelector('.login_show');
+					node.classList.remove('hidden');
+				  }
+				})();
+			</script>
+	</header>
+	<div class="intro"></div>
+	<div class="menu_name_pizza">
+		<h1 id ="pizza" class="name">Pizza</h1>
+	</div>
+	<div class="container_pizza">
+		<div class="container_menu_pizza">
+			<div class="container_img_pizza">
+				<img class="img_pizza" src="images/pepperoni.jpg">
+			</div>
+			<h1 class="text_menu">Pepperoni Pizza</h1>
+			<button class="button_pizza">25cm</button>
+			<button class="button_pizza">35cm</button>
+			<br><button class="buy_button">8.99$ Add</button></br>
+		</div>
+		<div class="container_menu_pizza">
+			<div class="container_img_pizza">
+				<img class="img_pizza" src="images/aprizo.jpg">
+			</div>
+			<h1 class="text_menu">Aprizot Chicken</h1>
+			<button class="button_pizza">25cm</button>
+			<button class="button_pizza">35cm</button>
+			<br><button class="buy_button">8.99$ Add</button></br>
+		</div>
+		<div class="container_menu_pizza">
+			<div class="container_img_pizza">
+				<img class="img_pizza" src="images/chicken.jpg">
+			</div>
+			<h1 class="text_menu">Chicken Hawail</h1>
+			<button class="button_pizza">25cm</button>
+			<button class="button_pizza">35cm</button>
+			<br><button class="buy_button">9.99$ Add"</button></br>
+		</div>
+		<div class="container_menu_pizza">
+			<div class="container_img_pizza">
+				<img class="img_pizza" src="images/italiano.jpg">
+			</div>
+			<h1 class="text_menu">Italiano Original</h1>
+			<button class="button_pizza">25cm</button>
+			<button class="button_pizza">35cm</button>
+			<br><button class="buy_button">8.99$ Add</button></br>
+		</div>
+		<div class="container_menu_pizza">
+			<div class="container_img_pizza">
+				<img class="img_pizza" src="images/primo.jpg">
+			</div>
+			<h1 class="text_menu">Primo Meat</h1>
+			<button class="button_pizza">25cm</button>
+			<button class="button_pizza">35cm</button>
+			<br><button class="buy_button">8.99$ Add</button></br>
+		</div>
+		<div class="container_menu_pizza">
+			<div class="container_img_pizza">
+				<img class="img_pizza" src="images/summer.jpg">
+			</div>
+			<h1 class="text_menu">Summer Pizza</h1>
+			<button class="button_pizza">25cm</button>
+			<button class="button_pizza">35cm</button>
+			<br><button class="buy_button">8.99$ Add</button></br>
+		</div>
+		<div class="container_menu_pizza">
+			<div class="container_img_pizza">
+				<img class="img_pizza" src="images/supreme.jpg">
+			</div>
+			<h1 class="text_menu">Supreme Pizza</h1>
+			<button class="button_pizza">25cm</button>
+			<button class="button_pizza">35cm</button>
+			<br><button class="buy_button">10.99$ Add</button></br>
+		</div>
+		<div class="container_menu_pizza">
+			<div class="container_img_pizza">
+				<img class="img_pizza" src="images/calzone.jpg">
+			</div>
+			<h1 class="text_menu">Pepperoni Calzone</h1>
+			<button class="button_pizza">25cm</button>
+			<button class="button_pizza">35cm</button>
+			<br><button class="buy_button">8.99$ Add</button></br>
+		</div>
+		<div class="container_menu_pizza">
+			<div class="container_img_pizza">
+				<img class="img_pizza" src="images/hawail.jpg">
+			</div>
+			<h1 class="text_menu">Hawail Vegetarian</h1>
+			<button class="button_pizza">25cm</button>
+			<button class="button_pizza">35cm</button>
+			<br><button class="buy_button">9.99$ Add</button></br>
+		</div>
+		<div class="container_menu_pizza">
+			<div class="container_img_pizza">
+				<img class="img_pizza" src="images/grand.jpg">
+			</div>
+			<h1 class="text_menu">Grand Italiano</h1>
+			<button class="button_pizza">25cm</button>
+			<button class="button_pizza">35cm</button>
+			<br><button class="buy_button">9.99$ Add</button></br>
+		</div>
+	</div>
+	<div class="menu_name_drinks">
+		<h1 id='link' class="name">Drinks</h1>
+	</div>
+	<div class="container_drinks">
+		<div class="container_menu_drinks">
+			<div class="container_img_drinks">
+				<img class="img_drinks" src="images/pepsi.jpg">
+			</div>
+			<h1 class="text_menu">Pepsi cola</h1>
+			<button class="buy_button">1.5$ Add</button>
+		</div>
+		<div class="container_menu_drinks">
+			<div class="container_img_drinks">
+				<img class="img_drinks" src="images/fanta.jpg">
+			</div>
+			<h1 class="text_menu">Fanta</h1>
+			<button class="buy_button">1.5$ Add</button>
+		</div>
+		<div class="container_menu_drinks">
+			<div class="container_img_drinks">
+				<img class="img_drinks" src="images/cola.jpg">
+			</div>
+			<h1 class="text_menu">Coca cola</h1>
+			<button class="buy_button">1.5$ Add</button>
+		</div>
+		<div class="container_menu_drinks">
+			<div class="container_img_drinks">
+				<img class="img_drinks" src="images/lipton.jpg">
+			</div>
+			<h1 class="text_menu">Lipton</h1>
+			<button class="buy_button">1.5$ Add</button>
+		</div>
+		<div class="container_menu_drinks">
+			<div class="container_img_drinks">
+				<img class="img_drinks" src="images/tea.jpg">
+			</div>
+			<h1 class="text_menu">Ice Tea</h1>
+			<button class="buy_button">1.25$ Add</button>
+		</div>
+	</div>
+	<footer class="footer">
+		<h1 class ="footer_pizzario">Pizza Rio</h1>
+		<h1 class ="footer_text">Pizza delivery | Telephone +7951485000 | pizzario@gmail.com</h1>
+		<h1 class ="reserved">2020 © Pizza Rio. All rights reserved.</h1>
+		<h1 class="text_maps">Contact us:</h1>
+		<h1 class="text_maps">454135,Chelyabinsk,</h1>
+		<h1 class="text_maps">Energetikov street 23A</h1>
+		<iframe class="maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d931.6122325139155!2d61.45323475175799!3d55.13626471456819!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x43c5f2b9b057cc45%3A0x122812d259f2f0ed!2sUlitsa%20Energetikov%2C%2023%D0%90%2C%20Chelyabinsk%2C%20Chelyabinskaya%20oblast&#39;%2C%20454135!5e0!3m2!1sen!2sru!4v1605270831115!5m2!1sen!2sru" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+	</footer>
+</div>
+</body>
+</html>
+
